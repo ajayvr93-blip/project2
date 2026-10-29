@@ -1,0 +1,29 @@
+// =============================================================================
+// SOLE CIRCLE - MAIN SCSS ENTRY
+// =============================================================================
+
+// 1. Theme variables & Bootstrap overrides (must be loaded before bootstrap)
+@import "./variables";
+
+// 2. Bootstrap 5 Framework
+@import "bootstrap/scss/bootstrap";
+
+// 3. Typography & Heading styles
+@import "./typography";
+
+// 4. Custom Studio Components & Layouts
+@import "./components";
+
+// Global baseline adjustments
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}

@@ -1,0 +1,107 @@
+// =============================================================================
+// SOLE CIRCLE DESIGN SYSTEM - VARIABLES & TOKENS
+// =============================================================================
+
+// Brand Colors
+$color-primary: #1F2226;          // Deep Charcoal
+$color-secondary: #6FD3C0;        // Fresh Mint / Teal Accent
+$color-secondary-dark: #4DB8A4;   // Dark Mint Hover
+$color-accent-red: #E4262B;       // Dynamic CTA / Sale Red
+$color-bg: #E9E9EB;               // Light Grey Studio Page Background
+$color-bg-hero-start: #F4F4F5;    // Gradient Hero Top
+$color-bg-hero-end: #DCDCDF;      // Gradient Hero Bottom
+$color-surface: #FFFFFF;          // Pure White Studio Cards
+$color-text-muted: #6B7077;       // Balanced Muted Slate
+$color-border: #D9D9DD;           // Subtle Neutral Border
+$color-star-filled: #1F2226;      // Charcoal Rating Star
+$color-star-empty: #C9C9CE;       // Soft Muted Star
+
+// Typography Tokens
+$font-family-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Shape and Radius Tokens
+$radius-sm: 6px;
+$radius-md: 12px;                 // 12px cards as per specification
+$radius-lg: 20px;
+$radius-pill: 999px;              // 999px buttons/pills
+
+// Shadow Tokens
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+$shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);   // Main studio card shadow
+$shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.12);  // Lifted card hover shadow
+$shadow-floor: 0 25px 40px -15px rgba(31, 34, 38, 0.28); // Hero sneaker floor shadow
+
+// Spacing scale (8px base)
+$space-1: 0.5rem;   // 8px
+$space-2: 1rem;     // 16px
+$space-3: 1.5rem;   // 24px
+$space-4: 2rem;     // 32px
+$space-5: 2.5rem;   // 40px
+$space-6: 3rem;     // 48px
+$space-8: 4rem;     // 64px
+$space-10: 5rem;    // 80px
+$space-12: 6rem;    // 96px
+
+// Transitions
+$transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+// =============================================================================
+// BOOTSTRAP 5 VARIABLE OVERRIDES (Before Bootstrap Import)
+// =============================================================================
+$primary: $color-primary;
+$secondary: $color-secondary;
+$danger: $color-accent-red;
+$body-bg: $color-bg;
+$body-color: $color-primary;
+$border-color: $color-border;
+$font-family-base: $font-family-body;
+$headings-font-family: $font-family-heading;
+$headings-font-weight: 700;
+$card-border-radius: $radius-md;
+$card-bg: $color-surface;
+$card-border-color: transparent;
+$btn-border-radius: $radius-pill;
+$btn-border-radius-sm: $radius-pill;
+$btn-border-radius-lg: $radius-pill;
+$link-color: $color-primary;
+$link-hover-color: $color-secondary-dark;
+
+// Expose CSS Custom Properties for GSAP and dynamic runtime styling
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-secondary-dark: #{$color-secondary-dark};
+  --color-accent-red: #{$color-accent-red};
+  --color-bg: #{$color-bg};
+  --color-bg-hero-start: #{$color-bg-hero-start};
+  --color-bg-hero-end: #{$color-bg-hero-end};
+  --color-surface: #{$color-surface};
+  --color-text-muted: #{$color-text-muted};
+  --color-border: #{$color-border};
+  --color-star-filled: #{$color-star-filled};
+  --color-star-empty: #{$color-star-empty};
+
+  --font-family-body: #{$font-family-body};
+  --font-family-heading: #{$font-family-heading};
+
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-pill: #{$radius-pill};
+
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+  --shadow-floor: #{$shadow-floor};
+
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-5: #{$space-5};
+  --space-6: #{$space-6};
+  --space-8: #{$space-8};
+}
